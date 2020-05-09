@@ -3,6 +3,7 @@ def has_negatives(a):
     """
     YOUR CODE HERE
     """
+    # create a set, all values in set need to be unique.
     cache = {}
     result = []
     # iterate through list to gather all k/v pairs

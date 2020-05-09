@@ -16,14 +16,12 @@ def intersection(arrays):
     second = arrays_list[1]
     combo = 0
     cache = dict()
-    for num in first:
+    for index, array in enumerate(arrays):
         # print("FIRST --> ", num)
-        for other_num in second:
+        for num in array:
             # print("SECOND", other_num)
-            if other_num == num:
-                combo = other_num
-                key = combo 
-                cache[key] = num
+            print("num", num)
+            pass
  
                 
     
@@ -32,9 +30,9 @@ def intersection(arrays):
 
 if __name__ == "__main__":
     arrays = []
-    a = [[1, 2, 3, 4, 5, 9], [12, 7, 2, 9, 1], [99, 2, 7, 1, 88, 9]]
+    a = [1, 2, 3, 4, 5, 9], [12, 7, 2, 9, 1], [99, 2, 7, 1, 88, 9]
     arrays.append(a)
-    # arrays.append(list(range(1000000,2000000)) + [1,2,3])
+    arrays.append(list(range(1000000,2000000)) + [1,2,3])
     # arrays.append(list(range(2000000,3000000)) + [1,2,3])
     # arrays.append(list(range(3000000,4000000)) + [1,2,3])
 
