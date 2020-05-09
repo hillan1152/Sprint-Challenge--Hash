@@ -21,15 +21,15 @@ def get_indices_of_item_weights(weights, length, limit):
     for i in range(0, length):
         weight_chart[weights[i]] = i
         print("Testing out chart --> ", weight_chart)
+    # Loop and find diff b/t each element
     l = 0
     while l <= length - 1:
-        # print("weight L --> ", weights[l])
         diff = limit - weights[l]
-        # print("diff --> ", diff)
-        # print("WEIGHTS DIFF --> ", weights[diff])
+        # if it's in the chart, print both indices
         if diff in weight_chart:
             print("MADE IT HERE")
             return (weight_chart[diff], l)
+        # add 1 to L if it doesn't pass
         l += 1
 
 
