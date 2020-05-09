@@ -25,7 +25,7 @@ def get_indices_of_item_weights(weights, length, limit):
     l = 0
     while l <= length - 1:
         diff = limit - weights[l]
-        # if it's in the chart, print both indices
+        # if diff is in the chart, print both indices
         if diff in weight_chart:
             print("MADE IT HERE")
             return (weight_chart[diff], l)
